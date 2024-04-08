@@ -14,7 +14,6 @@ $(document).keypress(function() {
     }
 });
 
-//
 function nextSequence() {
     $("h1").html("Level " + level);
     var randomNumber = Math.floor(Math.random() * 4);
@@ -34,7 +33,6 @@ $("div[type='button']").on("click", function(evt) {
     checkAnswer(userClickedPattern.length - 1);
 });
 
-//
 function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.oncanplaythrough = function() {
